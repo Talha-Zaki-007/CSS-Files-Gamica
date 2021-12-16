@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation practice</title>
+    <style>
+        #plane
+        {
+            width: 500px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: right 5s linear 0s, top 5s linear 0s;
+        }
+        #plane:hover
+        {
+            right: 500px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="flying-airplane.png" alt="" id="plane">
+</body>
+</html>

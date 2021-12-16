@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle 
+        {
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .circle 
+        {
+            /* content: ''; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: transparent;
+            border-radius: 50%;
+            border: 2px dashed #000;
+            /* animation-name: Rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            animation: Rotate 2s linear 0s infinite;
+        }
+
+        /* .play {
+  padding: 20px 30px;
+  font-size: 56px;
+} */
+        /* .stop {
+  font-size: 12px;
+  padding: 30px;
+  text-align: center;
+} */
+        @keyframes Rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="border"></div>
+        <!-- <div class="play"><i class="fa fa-play"></i>
+        </div> -->
+    </div>
+
+    <!-- <p>
+        PS: The icon loading is a bit slow. Wait until it shows up.
+      </p>
+      
+      <div class="circle">
+        <div class="border"></div>
+        <div class="stop">Stop me please</div>
+      </div>      -->
+</body>
+
+</html>

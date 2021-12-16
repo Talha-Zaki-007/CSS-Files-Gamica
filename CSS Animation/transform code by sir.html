@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Transform Code by Sir</title>
+
+    <style>
+        @keyframes fanChala {
+
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+
+
+        @keyframes meriAnimation {
+
+            0% {
+                background: green;
+
+            }
+
+            50% {
+                background: limegreen;
+            }
+
+            70% {
+                background: orange;
+            }
+
+            100% {
+                background: red;
+            }
+
+        }
+
+        #truck {
+            width: 200px;
+            position: absolute;
+            transform: rotate(30deg) scale(0.5) skew(20deg);
+            /* transform: skew(20deg); */
+            /* top:0; */
+            /* right: 0; */
+            /* transition: right 3s ease-in-out 0s, top 3s linear 0s; */
+        }
+
+        /* #truck:hover { */
+            /* right: 500px;
+            top:400px; */
+        /* } */
+
+        #tank {
+            width: 100px;
+            height: 600px;
+            background: green;
+            animation: meriAnimation 5s linear 0s;
+        }
+
+        #fan{
+            animation: fanChala 4s linear 0s ;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <img id="fan" src="fan.png" alt="">
+
+    <div id="tank"></div>
+    <!-- <img id='truck' src="car1.png" alt=""> -->
+
+</body>
+
+</html>
