@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation Practice</title>
+    <style>
+        .road
+        {
+            width: 100%;
+        }
+        .car-body
+        {
+            width: 100%;
+        }
+        .wheel
+        {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            animation: tyreRotation 4s linear 0s;
+            animation-iteration-count: infinite;
+        }
+        .main 
+        {
+            top: 225px;
+            width: 250px;
+            position: absolute;
+            animation: cardrive 4s ease-in-out 0s;     
+            animation-fill-mode: forwards; 
+            animation-iteration-count: infinite;      
+        }
+        .main1
+        {
+            top: 76px;
+            width: 250px;
+            position: absolute;
+            animation: cardrive 4s ease-in-out 0s;     
+            animation-fill-mode: forwards;  
+            animation-direction: reverse;
+            animation-direction: var(-1,1);
+            transform: scale(-1,1);  
+            animation-iteration-count: infinite;   
+        }
+        .wheel:nth-child(2)
+        {
+            top: 56px;
+            right: 32px;
+        }
+        .wheel:nth-child(3)
+        {
+            top: 55px;
+            left: 40px;
+        }
+        @keyframes cardrive 
+        {
+            from 
+            {
+                left: 0;
+            }
+            to 
+            {
+                left: 80%;
+            }
+        }
+        @keyframes tyreRotation
+        {
+            from
+            {
+                transform: rotate(0deg);
+            }
+            to
+            {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="myroad.jpg" alt="road" class="road">
+    <div class="main">
+        <img src="my-car.png" alt="car body" class="car-body">
+        <img src="wheel.png" alt="car tyre" class="wheel ">
+        <img src="wheel.png" alt="car tyre" class="wheel">
+    </div>
+    <div class="main1">
+        <img src="my-car.png" alt="car body" class="car-body">
+        <img src="wheel.png" alt="car tyre" class="wheel ">
+        <img src="wheel.png" alt="car tyre" class="wheel">
+    </div>
+</body>
+</html>

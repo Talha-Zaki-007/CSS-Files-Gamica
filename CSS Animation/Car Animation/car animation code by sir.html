@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car animation code by sir</title>
+    <style>
+        @keyframes carMoving {
+
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 80%;
+            }
+
+        }
+
+        @keyframes wheeling {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        #meriCar {
+            animation: carMoving 4s linear 0s;
+            animation-fill-mode: forwards;
+            width: 250px;
+            position: absolute;
+            top: 0;
+        }
+
+        #carBody {
+            width: 100%;
+            
+        }
+
+        .wheel {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            animation: wheeling 2s linear 0s;
+            
+        }
+
+        .wheel:nth-child(3) {
+            right: 32px;
+            top: 58px;
+        }
+
+        .wheel:nth-child(2) {
+            top: 58px;
+            left: 35px;
+        }
+
+        #road {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img id="road" src="myroad.jpg" alt="">
+    <div id="meriCar">
+
+        <img id="carBody" src="my-car.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+        <img class="wheel" src="wheel.png" alt="">
+
+    </div>
+
+</body>
+
+</html>
