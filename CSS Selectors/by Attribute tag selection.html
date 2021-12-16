@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Attribute tag selection</title>
+    <style>
+        [class~=am]
+        {
+            background-color: yellow;
+            color: blue;
+        }
+        [class$=good]
+        {
+            background-color: blue;
+            color: pink;
+        }
+        [class^=i]
+        {
+            background-color: purple;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="i'm good">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi repudiandae totam, facere deserunt excepturi laboriosam iure iste tempora a. Ut alias sit quae adipisci error soluta iure, similique nobis ad.
+    </p>
+    <p class="i am not good" >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non labore, blanditiis in ad inventore nesciunt obcaecati deleniti quia cupiditate error corporis soluta eveniet quae odit assumenda laborum nemo eligendi. Facere.
+    </p>
+</body>
+</html>
