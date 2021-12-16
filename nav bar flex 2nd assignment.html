@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar flex 2nd Assignment</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .header
+        {            
+            align-items: baseline;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: stretch;
+            margin-top: 10px;
+            padding: 49px;
+            background-color: rgba(44, 44, 190, 0.932);
+            align-items: center;
+            flex-grow: 2;
+        }
+        .class
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            align-content: stretch;
+            height: 30px;
+            flex-grow: 0;
+            padding-top: 10px;
+        }
+        ul
+        {
+            flex-grow: 1;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-between;
+            color: white;
+            list-style-type: none;
+            border: none;
+        }
+        ul li select
+        {
+            list-style-type: none;
+            list-style: none;
+            border: none;
+            background-color: rgba(44, 44, 190, 0.932);
+            color: white;
+        }
+        option
+        {
+            border-style: none;
+            border: none;
+        }
+        .masterImage
+        {
+            height: 500px;
+            width: 1366px;
+            position: fixed;
+        }
+        input
+        {
+            background-color: rgba(44, 44, 190, 0.932);
+            border-style: none;
+            height: 50px;
+            width: 100px;
+            border:1px solid skyblue;
+            border-radius: 80px;
+            color: white;
+        }
+        #home
+        {
+            position: relative;
+            top: -5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <header class="header"> 
+            <div class="logo">
+                <img src="Agico logo.PNG" />
+            </div>
+            <ul class="ul">
+                <li class="class">
+                    <select class="option" name="" id="">
+                        <option id="home" value="HOME">HOME</option>
+                    </select>
+                    </li>
+                <li class="class">ABOUT</li>
+                <li class="class">SERVICES</li>
+                <li class="class">
+                    <select name="" id="">
+                        <option value="PAGES">PAGES</option>
+                    </select>
+                </li>
+                <li class="class">BLOG</li>
+                <li class="class">CONTACT</li>
+            </ul>
+            <div><input type="button" value="Sign Up"></div>
+        </header>
+    </nav>
+    <img class="masterImage" src="master image.PNG" alt="master image">
+</body>
+</html>
